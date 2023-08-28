@@ -1,4 +1,4 @@
-const getComputerChoice = function () {
+const getComputerChoice = () => {
   const randomNumber = Math.floor(Math.random() * 3);
   switch (randomNumber) {
     case 0:
@@ -13,7 +13,7 @@ const getComputerChoice = function () {
   }
 };
 
-const playGame = function (playerSelection, computerSelection) {
+const playGame = (playerSelection, computerSelection) => {
   //checking if playerSelection is valid
   if (
     playerSelection !== "rock" &&
@@ -73,3 +73,5 @@ if (playerPoints > computerPoints) {
 } else {
   console.log("*It's a tie!*");
 }
+
+console.log("xd");
